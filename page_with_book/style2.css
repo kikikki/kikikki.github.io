@@ -15,7 +15,7 @@ body,html {
     justify-content:space-between;
 }
 .logo {
-    background-image: url('/home/yulia/Загрузки/Clean Template/images/logo.gif');
+    background-image: url('images/logo.gif');
     background-repeat:no-repeat;
     width:260px;
     height:75px;
@@ -55,7 +55,7 @@ main p {
     justify-content:flex-end;
 }    
 .book {
-    background-image: url('/home/yulia/Загрузки/Clean Template/images/Untitled-4.png');
+    background-image: url('images/Untitled-4.png');
     background-repeat:no-repeat;
     width:700px;
     height:220px;
