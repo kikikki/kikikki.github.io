@@ -1,0 +1,285 @@
+body,html {
+    /* padding:0; */
+    margin: 18px 0 10px 0;
+}
+body {
+    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/bg_patterns.gif');
+}
+.wrap {
+    width:66.6%;
+    margin:0 auto;
+    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/bg_container.png');
+    border-radius: 10px;
+    padding-top:10px;
+}
+/* ------------------------------------------------HEADER-------------------------------------------------------- */
+.container1 {
+    display:flex;
+}
+.logo {
+    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/logo.gif');
+    background-repeat:no-repeat;
+    width:40px;
+    height:40px;
+    margin-left:20px;
+}
+h1 {
+    color:#7b8266;
+    font-size:24px;
+    font-weight: normal;
+    margin-top:10px;
+    padding-left:10px;
+    font-family:Arial, Tahoma, Verdana,Helvetica, sans-serif;
+}
+h1 a {
+    text-decoration: none;
+    color:#7b8266;
+}
+.section {
+    display:flex;
+    background:#363B28;
+    margin:0 auto;
+    border-radius: 10px;
+    width:95%;
+    justify-content: space-between;
+    box-shadow: inset 0 -10px 30px 0px rgba(0,0,0,0.5);
+}
+ .menu {
+    display:flex;
+    list-style:none;
+    padding:5px 10px 5px 10px;
+    font-size:14px;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    /* align-self:center; */
+}
+.menu a {
+    text-decoration: none;
+    color:#b1b3ab;
+}
+.menu a:hover {
+    color: #82865b;
+}
+input {
+    background:#696D5F;
+    border:1px solid #212417;
+    color:#474A40;
+    padding: 3px 2px 0 3px;
+}
+::-webkit-input-placeholder  {
+    color:#474A40;
+}
+/* ----------------------------PICTURE------------------------------ */
+.container2 {
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.container2 img {
+    border-radius: 10px;
+}
+/* -----------------------------------------BLOCK1-3------------------------------- */
+.container3 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin:25px;
+
+}
+.block1, .block2, .block3{
+    display:flex;
+    background:#363B28;
+    flex-direction:column;
+    border-radius: 5px;
+    /* box-shadow: inset 0 -40px 30px 5px rgba(0,0,0,0.5); */
+    box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.5);
+
+}
+ h2 {
+    padding-left:22px;
+    padding-top:10px;
+    font-size:18px;
+    font-weight: normal;
+    font-family:Arial, Tahoma, Verdana,Helvetica, sans-serif;
+    color:#7c7c58;
+    margin:10px 0 10px 0;
+}
+.block1 img, .block2 img, .block3 img {
+    border:3px solid black;
+    margin:10px;
+    margin-bottom:10px;
+    margin-top:7px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.5);
+}
+
+.wrap1 {
+    width:100%;
+    background:#323C26;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius: 10px;
+    /* box-shadow: inset 8px 0 10px -6px rgba(0,0,0,0.5); */
+    /* box-shadow:  0 5px 40px -4px red; */
+    box-shadow: inset 0 -10px 40px -10px rgba(0,0,0,0.7);
+    border: 2px solid #3B3F2D;
+}
+.section2 {
+    width:99.5%;
+    background: #2d3622; 
+    margin:-7px 2px 0 2px;
+    padding:0px 0 5px 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.section2 h2 {
+    font-size:25px;
+    font-weight: normal;
+    font-family:Arial, Tahoma, Verdana,Helvetica, sans-serif;
+    color:#7c7c58;
+
+}
+.container5 {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+li a {
+    text-decoration: none;
+    color:#7b8266;
+}
+.navigation {
+    margin-top:0px;
+}
+.navigation li {
+    list-style:none;
+    font-weight: normal;
+    font-size:13px;
+    font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding:10px;
+    background:#323C26 url(../images/list_dotted_border.gif) bottom repeat-x;
+}
+.navigation li:hover {
+    background:  #2C3421;
+}
+.wrap1 img {
+    align-self:flex-end;
+}
+footer {
+    width:63%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #313B24;
+    margin:0 auto;
+    margin-top:-33px;
+    border:2px solid black;
+    border-top:none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.logo_small {
+    display: flex;
+    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/logos.gif');
+    background-repeat:no-repeat;
+    margin:10px 0 10px 10px;
+}
+span {
+    display: flex;
+    flex-wrap: wrap;
+}
+span a{
+    margin-left:5px;
+    align-self:center;
+    text-decoration: none;
+    color:#7b8266;
+    font-size:13px;
+    font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.menu_footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.po1 a {
+    text-decoration: none;
+    color:#7b8266;
+    font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+.po1{
+    margin-right:10px;
+}
+.po1 a:hover {
+    color:#bb800f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .section, .menu {
+        flex-wrap:wrap;
+    }
+    input {
+        width:160px; 
+        min-height:18px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .container2 img {
+        width:700px;
+        height:400px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .container2 img {
+        width:500px;
+        height:300px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .container2 img {
+        width:400px;
+        height:200px;
+    }
+    
+}
+@media screen and (max-width: 630px) {
+    .container2 img {
+          width:300px;
+         height:200px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .container2 img {
+        width: 240px;
+       height:200px;
+  }
+}
