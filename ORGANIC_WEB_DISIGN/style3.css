@@ -3,12 +3,12 @@ body,html {
     margin: 18px 0 10px 0;
 }
 body {
-    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/bg_patterns.gif');
+    background-image: url('images/bg_patterns.gif');
 }
 .wrap {
     width:66.6%;
     margin:0 auto;
-    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/bg_container.png');
+    background-image: url('images/bg_container.png');
     border-radius: 10px;
     padding-top:10px;
 }
@@ -17,7 +17,7 @@ body {
     display:flex;
 }
 .logo {
-    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/logo.gif');
+    background-image: url('images/logo.gif');
     background-repeat:no-repeat;
     width:40px;
     height:40px;
@@ -157,7 +157,7 @@ li a {
     font-size:13px;
     font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding:10px;
-    background:#323C26 url(../images/list_dotted_border.gif) bottom repeat-x;
+    background:#323C26 url("images/list_dotted_border.gif") bottom repeat-x;
 }
 .navigation li:hover {
     background:  #2C3421;
@@ -181,7 +181,7 @@ footer {
 }
 .logo_small {
     display: flex;
-    background-image: url('/home/yulia/Документы/Папка 2/ORGANIC WEB DISIGN/images/logos.gif');
+    background-image: url('images/logos.gif');
     background-repeat:no-repeat;
     margin:10px 0 10px 10px;
 }
