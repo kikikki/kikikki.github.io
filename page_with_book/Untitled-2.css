@@ -1,0 +1,104 @@
+body,html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background:white;
+    position: relative; 
+    height: 100%;
+}
+
+header.first {
+    position: relative; 
+    min-height: 50px;
+    padding: 20px;
+    background:black;
+    box-shadow: 0 0 200px rgba(0,0,0,0.5);
+}
+ul{
+    margin-left: 410px;
+    margin-top:20px;
+    list-style: none;
+    text-align: center;
+    margin-top:20px;
+}
+li {
+    display: inline-block;
+    color:white;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.logo {
+    position: absolute;
+    bottom: 0px;
+    left: 240px;
+}
+.main {
+    margin-top: 100px;
+    margin-left:20px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+h1 {
+    font-style: italic;   
+}
+p {
+    margin-top:-20px;
+    font-size: 15px;
+}
+.book {
+    z-index: -20;
+    top: 200px;
+    margin-left:320px;
+    margin-top: 110px;
+}
+.about {
+    position: absolute;
+    width:32%; 
+    top:480px;
+    
+}
+.about h1 {
+    margin-left: 0px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.about p {
+    margin-left: 0px;
+    font-size: 13px;
+    font-style: italic;
+}
+.clients {
+    position: absolute;
+    width:30%;
+    right: 10px; left:700px;
+    top:480px; 
+      
+}
+.clients h1 {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.clients p {
+    margin-left: 0px;
+    font-size: 13px;
+    font-style: italic;
+}
+footer{
+    background: black;
+    /* height:150px; */
+    position: absolute;
+    clear:both;
+    /* bottom:-400px; */
+    /* left:0; */
+    /* width: 100%; */
+  
+}
+.hren {
+
+   color:white;  
+
+}

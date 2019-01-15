@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background:white;
+    
+   
+}
+header.first {
+    position: relative;
+    z-index: 5;
+    min-height: 20px;
+    padding: 20px;
+    background:black;
+    box-shadow: 0 0 200px rgba(0,0,0,0.5);
+}
+ul{
+    margin: 0;
+    margin-left: 900px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    margin-top:10px;
+}
+li {
+    display: inline-block;
+    color:white;
+    margin-left: 40px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+    position: absolute;
+    bottom: -10px;
+}
+.main {
+    position: relative;
+    top: 60px;
+    margin-left:20px;
+
+}
+h1 {
+    /* position: absolute; */
+    font-style: italic;
+    margin-bottom:-10px;
+}
+p {
+    font-style: italic;
+}
+.book {
+    position: relative;
+    top: 100px;
+    margin-left:700px;
+}
+.about {
+    position: relative;
+    float: left;
+    
+    width:48%;
+}
+.about h2 {
+    margin-left: 0px;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+.about p {
+    margin-left: 0px;
+}
+.clients {
+    position: relative;
+    float: right;
+    width:50%;
+}
+.clients h2 {
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+
