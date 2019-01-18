@@ -30,6 +30,7 @@ h1 {
     margin-top:10px;
     padding-left:10px;
     font-family:Arial, Tahoma, Verdana,Helvetica, sans-serif;
+    text-transform:uppercase;
 }
 h1 a {
     text-decoration: none;
@@ -104,6 +105,7 @@ input {
     font-family:Arial, Tahoma, Verdana,Helvetica, sans-serif;
     color:#7c7c58;
     margin:10px 0 10px 0;
+    text-transform:uppercase;
 }
 .block1 img, .block2 img, .block3 img {
     border:3px solid black;
@@ -137,6 +139,7 @@ input {
     font-weight: normal;
     font-family:Arial, Tahoma, Verdana,Helvetica, sans-serif;
     color:#7c7c58;
+    text-transform: uppercase;
 
 }
 .container5 {
@@ -153,6 +156,7 @@ li a {
 }
 .navigation li {
     list-style:none;
+    text-transform: uppercase;
     font-weight: normal;
     font-size:13px;
     font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -196,6 +200,7 @@ span a{
     color:#7b8266;
     font-size:13px;
     font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 .menu_footer {
     display: flex;
@@ -206,6 +211,7 @@ span a{
     color:#7b8266;
     font-family: "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size:13px;
+    text-transform: uppercase;
 }
 .po1{
     margin-right:10px;
