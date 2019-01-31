@@ -79,7 +79,7 @@ h1 {
     justify-content: flex-start;
     margin-top:33px; 
 }
-span {
+.level {
     margin-right:143px;
     font-size:16px;
     font-family: SegoeUI;
@@ -89,10 +89,10 @@ span {
     line-height: 1.31;
     letter-spacing: normal;
 }
-.one span:first-child {
+.one .level:first-child {
     margin-left:40px;
 }
-.one span:last-child {
+.one .level:last-child {
     margin-right:40px;
 }
 hr {
@@ -158,9 +158,11 @@ p {
     height:90px;
     background:#ffffff;
     margin-left:10px;
+    display:none;
+}
+#blue_face {
     display:flex;
 }
-
 .person_item {
     width:60px;
     height:60px;
@@ -173,14 +175,8 @@ p {
     justify-content: center;
     position:relative;
 }
-.person_item:first-child {
-    margin-left:15px;
-}
-.person_item:hover {
-    border:3px solid #006bcc;
-}
-.person_item:checked::before{
-    content:"";
+.person_item span {
+    display:none;
     width:5px;
     height:5px;
     border-radius:50%;
@@ -189,6 +185,16 @@ p {
     top:5px;
     left:5px;
 }
+.person_item:first-child span {
+    display: block;
+}
+.person_item:first-child {
+    margin-left:15px;
+}
+.person_item:hover {
+    border:3px solid #006bcc;
+}
+/* -----------------------------------------image sizes--------------------------------------- */
 .one img {
     width:33.1px;
     height:19.5px;
@@ -204,6 +210,36 @@ p {
     height:21.4px;
     align-self:center;
 }
+.four img {
+    width:36.2px;
+    height:14.2px;
+    align-self:center;
+}
+.five img {
+    width:41.4px;
+    height:20px;
+    align-self:center;
+}
+.six img {
+    width:38.5px;
+    height:16px;
+    align-self:center;
+}
+.seven img {
+    width:40.5px;
+    height:17.4px;
+    align-self:center;
+}
+.eight img {
+    width:48.2px;
+    height:18px;
+    align-self:center;
+}
+.nine img {
+    width:23.1px;
+    height:21.7px;
+    align-self:center;
+}
 
 .body img {
     width:42.6px; 
@@ -213,8 +249,6 @@ p {
 .block2 {
     display:flex;
     position: relative;
-}
-.person {
 }
 .mac {
     width:356px;
