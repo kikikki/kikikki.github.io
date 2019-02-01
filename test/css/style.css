@@ -7,6 +7,12 @@ body,html {
     margin:0; 
     background:#71bfff;
     height:100%;
+    font-family: SegoeUI;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
 }
 .wrapper {
     display:flex;
@@ -15,26 +21,15 @@ body,html {
     height:100%;
     justify-content:center;
 }
+/* -------------------------------------block_left------------------------------------------- */
 .block1 {
     width:580px;
     height:718px;
     background: #e1f4ff;
 }
-.block2 {
-    width:580px;
-    height:718px;
-    background: white;
-}
 h1 {
     font-size:25px;
     margin:90px 0 30px 40px;
-    font-family: SegoeUI;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.32;
-    letter-spacing: normal;
-
 }
 .cont1 {
     width:500px;
@@ -42,7 +37,7 @@ h1 {
     background: #ffffff;
     margin-left:40px;
 }
-/* ----------------------------------------------------------slider----------------------------------------------------------- */
+/* ------------------------------------------slider-------------------------------------------- */
 .range {
     width:420px;
     height:4px;
@@ -73,8 +68,7 @@ h1 {
     cursor: pointer;
     background: #d1e3f2; 
 }
-
-.one {
+.lev {
     display:flex;
     justify-content: flex-start;
     margin-top:33px; 
@@ -82,19 +76,14 @@ h1 {
 .level {
     margin-right:143px;
     font-size:16px;
-    font-family: SegoeUI;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
 }
-.one .level:first-child {
+.lev .level:first-child {
     margin-left:40px;
 }
-.one .level:last-child {
+.lev .level:last-child {
     margin-right:40px;
 }
+/* ---------------------------------------------end_slider------------------------------------ */
 hr {
     width:420px;
     margin-top:40.5px;
@@ -106,43 +95,22 @@ p {
     margin-top:40.5px;
     margin-left:74px;
     margin-right:89px;
-    font-family: SegoeUI;
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
     color: #000000;
 }
-
-
-
-
-
-
+/* --------------------------------------block_left_bottom----------------------------------- */
 .cont2 {
     display:flex;
     margin-top:50px;
 }
 .left h2 {
     margin-left:40px;
-    font-family: SegoeUI;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
     font-size:25px;
 }
 .right h2 {
     margin-left:10px;
-    font-family: SegoeUI;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
     font-size:25px;
 }
 .bodies {
@@ -194,7 +162,7 @@ p {
 .person_item:hover {
     border:3px solid #006bcc;
 }
-/* -----------------------------------------image sizes--------------------------------------- */
+/* -----------------------------------------image_sizes--------------------------------------- */
 .one img {
     width:33.1px;
     height:19.5px;
@@ -240,15 +208,20 @@ p {
     height:21.7px;
     align-self:center;
 }
-
+/* ------------------------------------------------block2------------------------------------- */
+.block2 {
+    display:flex;
+    position: relative;
+    width:580px;
+    height:718px;
+    background: white;
+    justify-content: center;
+    align-items: flex-start;
+}
 .body img {
     width:42.6px; 
     height:46.7px;
     align-self:flex-end;
-}
-.block2 {
-    display:flex;
-    position: relative;
 }
 .mac {
     width:356px;
@@ -272,4 +245,118 @@ p {
     right:234.4px;
     bottom:262.1px;
     z-index:2;
+}
+.tags {
+    width:350px;
+    height:200px;
+    margin-top:76.9px; 
+    margin-left:30px;
+    position: relative;  
+}
+.tag {
+    text-align:center;
+    display:table;
+}
+.a {
+    display:table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.html {
+    width:88.8px;
+    height: 45.1px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    left:59.2px;
+}
+.css {
+    width:50.7px;
+    height: 33.8px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:6px;
+    left:162.8px; 
+}
+.sql {
+    width:40.7px;
+    height: 26px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:3.2px;
+    left:228.3px; 
+}
+.adaptive {
+    width:88.8px;
+    height: 33.8px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:70.5px;
+    left:0px; 
+}
+.basejs {
+    width:105.1px;
+    height: 46.1px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:61.2px;
+    left:111.8px; 
+}
+.webpack {
+    width:107.9px;
+    height: 40.2px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:39.8px;
+    left:228.1px; 
+}
+.eslint {
+    width:66.6px;
+    height: 33.8px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:124.4px;
+    left:47.5px; 
+}
+.gulp {
+    width:73.1px;
+    height: 43.3px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:123.4px;
+    left:131px; 
+}
+.sass {
+    width:47.1px;
+    height: 26.4px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:131.7px;
+    left:215.5px; 
+}
+.git {
+    width:33.3px;
+    height: 25.4px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:94.8px;
+    left:235.7px; 
+}
+.pug {
+    width: 50.7px;
+    height: 33.8px;
+    background:#006bcc;
+    position: absolute;
+    border-radius: 5px;
+    top:93.7px;
+    left:285.4px; 
 }
