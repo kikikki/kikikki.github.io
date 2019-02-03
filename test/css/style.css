@@ -30,12 +30,14 @@ body,html {
 h1 {
     font-size:25px;
     margin:90px 0 30px 40px;
+    font-weight: bold;
 }
 .cont1 {
     width:500px;
     height:271px;
     background: #ffffff;
     margin-left:40px;
+    position: relative;
 }
 /* ------------------------------------------slider-------------------------------------------- */
 .range {
@@ -98,6 +100,23 @@ p {
     font-size: 16px;
     color: #000000;
 }
+.quot{
+    width: 7.9px;
+    height: 11.7px;
+    background: #006bcc;
+    -webkit-clip-path: polygon(13% 0, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(13% 0, 100% 0%, 80% 100%, 0% 100%);
+    position: absolute;
+}
+.l {
+    left:53px;
+    top:200px;  
+}
+.r {
+    left:41px;
+    top:200px;  
+}
+
 /* --------------------------------------block_left_bottom----------------------------------- */
 .cont2 {
     display:flex;
@@ -142,6 +161,11 @@ p {
     display:flex;
     justify-content: center;
     position:relative;
+}
+.body img {
+    width:42.6px; 
+    height:46.7px;
+    align-self:flex-end;
 }
 .person_item span {
     display:none;
@@ -218,11 +242,6 @@ p {
     justify-content: center;
     align-items: flex-start;
 }
-.body img {
-    width:42.6px; 
-    height:46.7px;
-    align-self:flex-end;
-}
 .mac {
     width:356px;
     height:130px;
@@ -237,6 +256,10 @@ p {
     position: absolute;
     right:178.3px;
     bottom:124.3px;
+    display:none;
+}
+#pbody_blue {
+    display:block;
 }
 .person_face {
     width:90.7px;
@@ -245,7 +268,39 @@ p {
     right:234.4px;
     bottom:262.1px;
     z-index:2;
+    display:none;
 }
+#pface_blue_one {
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tags {
     width:350px;
     height:200px;
