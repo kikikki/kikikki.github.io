@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="magnific-popup.css">
+
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidebar').css('height', $(window).height());
+            $('a[href*="#"]').on("click", function(e){
+                console.log( this);
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 500);
+                e.preventDefault();
+                return false;
+            });
+            $(window).resize(function() {
+                $('.sidebar').css('height', $(window).height());
+            });
+            
+            $('.gallery_prev').each(function() {  
+                $(this).magnificPopup({ 
+                delegate: 'a',  
+                type: 'image', 
+                gallery: { 
+                    enabled:true 
+                } 
+                }); 
+            }); 
+        });
+    </script>       
+</head>
+<body>
+    <div class="wrapper">
+            <div class="sidebar">
+                    <aside>
+                        <div class="logo">
+                            <img src="img/logo.png" alt="logo">
+                            <h1>Neaty</h1>
+                        </div>
+        
+                        <div class="navigation">
+                            <nav>
+                                <div class="menu"><a href ="#welcome">Welcome</a></div>
+                                <div class="menu"><a href ="#about">About Us</a></div>
+                                <div class="menu"><a href ="#galleryone">Gallery One</a></div>
+                                <div class="menu"><a href ="#gallerytwo">Second Gallery</a></div>
+                                <div class="menu"><a href ="#gallerythree">Third Gallery</a></div>
+                                <div class="menu"><a href ="#">Contact Us</a></div>
+                            </nav>
+                        </div>
+                    </aside>
+            </div>
+            
+
+            <div class="content">
+                <main>
+                    <div class="image">
+                        <img src="img/neaty-01.jpg" alt="header_image">
+                    </div>
+<!-- ---------------------------------------first_block---------------------------- -->
+                <section class="welcome" id="welcome">
+                    <header>
+                        <h1>Welcome to Neaty Design</h1>
+                    </header>
+                    <p>Neaty is simple and clean design HTML CSS template for any kind of website. Feel free to use this layout. Please tell your friends about templatemo website. Thank you. Suspendisse imperdiet, felis eu hendrerit pretium, sapien mauris blandit arcu, et accumsan neque est ut erat. Vivamus eget tellus euismod, interdum nibh at, eleifend justo. Quisque placerat ante in ex tempor, ultrices bibendum nunc finibus. Etiam luctus nec eros vel pulvinar.</p>
+                </section>
+
+<!-- ---------------------------------------second_block-------------------------------- -->
+                <section class="about" id="about">
+                    <div class="about_image">
+                        <img src="img/neaty-02.jpg" alt="image">
+                    </div>
+                    
+                    <div class="about_text">
+                        <header>
+                            <h2>About the team</h2>
+                        </header>
+                        <p>Sed turpis nunc, laoreet sit amet fermentum sed, euismod ac justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <p>Donec ut lectus semper, sollicitudin risus blandit, mattis felis. Nam non malesuada odio. Vestibulum vaius, arcu eget rutrum consequat, arcu lacus imperdiet arcu, id pulvinar arcu erat vel magna.</p>
+                        <p>Ut commodo malesuada eros, quis consequat ante tincidunt ut. Suspendisse malesuada augue vitae nisi sollicitudin placerat.</p>
+                       <a href="#" class="button">Read More</a>
+                    </div>
+                </section> 
+            
+<!-- --------------------------------------------first_gallery ------------------------- -->
+                <section class="gallery" id="galleryone">
+                    <header>
+                        <h1>Gallery One</h1>
+                    </header>
+                    <div class="gallery_prev one">
+                        <div class="photo">
+                            <a href="img/neaty-03.jpg"><img src="img/neaty-03.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-04.jpg"><img src="img/neaty-04.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-05.jpg"><img src="img/neaty-05.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-06.jpg"><img src="img/neaty-06.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-07.jpg"><img src="img/neaty-07.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                    </div>
+                </section>
+
+<!-- -------------------------------------------second_gallery------------------------------ -->
+                <section class="gallery" id="gallerytwo">
+                    <header>
+                        <h1>Second Gallery</h1>
+                    </header>
+                    <div class="gallery_prev two">
+                        <div class="photo">
+                            <a href="img/neaty-08.jpg"><img src="img/neaty-08.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-09.jpg"><img src="img/neaty-09.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-10.jpg"><img src="img/neaty-10.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                    </div>
+                </section>
+<!-- -------------------------------------------third_gallery------------------------------- -->
+                <section class="gallery" id="gallerythree">
+                    <header>
+                        <h1>Third Gallery</h1>
+                    </header>
+                    <div class="gallery_prev three">
+                        <div class="photo">
+                            <a href="img/neaty-11.jpg"><img src="img/neaty-11.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-12.jpg"><img src="img/neaty-12.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-13.jpg"><img src="img/neaty-13.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                        <div class="photo">
+                            <a href="img/neaty-14.jpg"><img src="img/neaty-14.jpg" alt="photo_gallery" class="test"></a>
+                        </div>
+                    </div>
+                </section>
+<!-- -----------------------------------------contact---------------------------------------- -->
+                <section class="contact" id="contact">
+                    <div class="cont_left">
+                        <header><h1>Contact Us</h1></header>
+                        <form action="#" method="post">
+                            <input type="text" value="Name"><br>
+                            <input type="email" value="Email"><br>
+                            <textarea name="message" rows="8">Message</textarea><br>
+                            <button type="submit">Send</button>
+                        </form>
+                     </div>
+                    <div class="cont_right">
+                        <p>Nullam vivera fermentum purus id blandit. Phasellus lacus mi, porta vel sodales nec, faucibus non eros. Nulla at quam vel risus laoreet tincidunt in in sem.</p>
+                        <address>
+                            11/22 Etiam mauris erat,<br>
+                            Vestibulum eu augue nec, 10220<br>
+                            Nam consequat<br>
+                        </address>
+                    </div>  
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
