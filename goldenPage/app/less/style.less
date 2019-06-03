@@ -1,0 +1,593 @@
+@import url(//db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI);
+@font-face {font-family: "Wisdom Script AI";
+    src: url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.eot");
+    src: url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d6ced0df95b7cc53e0eae88817930d08.svg#Wisdom Script AI") format("svg");
+}
+@font-face {
+    font-family: "DroidSerif";
+    src:url('../fonts/3951.ttf');
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 100%;
+}
+
+.header {
+    // &__overlay {
+    //     height:100vh;
+    //     background: #000;
+    //     position: absolute;
+    //     top: 0;bottom: 0;
+    //     left: 0;right: 0;
+    //     width:100%;
+    // }
+    // &__overlay {
+    //     position: relative;
+    // }
+    // &__overlay:before {
+    //     content:'';
+    //     position: absolute;
+    //     top:0;left: 0;
+    //     bottom: 0; right:0;
+    //     background-color: rgba(0,0,0,0.5);
+    //     z-index:1;
+    // }
+    // img {
+    //    width:100%;
+    //     max-height:100vh;
+        
+    // }
+    &__bg {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/bg.jpeg');
+        background-size:cover;
+        height:100vh;
+        max-width:100%;
+        background-repeat: no-repeat;
+    
+    }
+    &__menu {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:66.6%;
+        position: absolute; 
+        top:2.75rem;
+        z-index:1;
+
+    }
+    &__wrap {
+        width:66.6%;
+        margin:0 auto;
+    }
+    &__headline {
+        position: absolute; 
+        color:#fff;
+        top:17.25rem; 
+        white-space:nowrap;
+        z-index:1;
+
+    }
+    &__subtitle {
+        text-align:center;
+        font-family: "DroidSerif";
+        font-style:italic;
+        font-size: 2.5rem;
+        font-weight: normal;
+        letter-spacing: -1px;
+        padding-bottom:1.25rem;
+    }
+    &__title {
+        text-align:center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4.7rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: -1.9px;
+    }
+    &__button {
+        position: absolute; 
+        text-align:center;
+        top:29.7rem; 
+        width:66.6%;
+        z-index:1;
+    }
+}
+.logo {
+    font-family: "Wisdom Script AI";
+    color:#fed136;
+    font-size:1.625rem;
+    line-height: 1.58;
+    letter-spacing: 1.3px;
+    top: 20px;
+}
+.navigation {
+    display:flex;
+    align-items: center;
+    flex-direction:row-reverse;
+   &__list {
+       display:flex;
+   }
+   &__link {
+       text-decoration: none;
+       color:#fff;
+       font-family: 'Montserrat', sans-serif;
+       font-size:1.125rem;
+       line-height: 2.93;
+   }
+   &__item {
+        list-style:none;   
+   }
+   &__item:not(:last-child) {
+        padding-right:2.5rem;  
+   }
+   &__link:hover {
+    border-bottom:0.125rem solid #fed136;
+   }
+   &__btn{
+    border: 0;
+    background: none;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+   }
+   &__line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin-bottom: 3px; 
+   }
+   &__line:last-child {
+    margin-bottom: 0;
+  }
+  &__btn:hover {
+      background:#fff;
+  }
+  &__burg {
+      display:none;
+  }
+}
+.button {
+    text-align: center;
+    &__btn {
+        text-decoration: none;
+        color:#fff;
+        background:#fed136;
+        padding:1.2rem 3.2rem;
+        font-size: 1.12rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 3px;
+    }
+    &__btn:hover {
+        background-color: darken(#fed136, 10%); 
+        box-shadow: 0 0 0 2px;  
+    }
+}
+.section__title {
+    margin-top:5.5rem;
+        font-size:2.5rem;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1.88;
+        text-align: center;
+}
+.section {
+    width:66.6%;
+    margin:0 auto;
+    &__title--white {
+        .section__title;
+        color:white;
+    }
+    &__subtitle {
+        margin-top:-0.5rem;
+        margin-bottom:3rem;
+        font-family: "DroidSerif";
+        font-size:1rem;
+        color:#777777;
+        text-align:center;
+        font-style:italic;
+        font-weight: normal;
+    }
+}
+ .services {
+     display:flex;
+     &__item {
+         width:28%;
+         margin-right:3.5rem;
+     }
+     &__item:last-child {
+         width:28%;
+         margin-right:0;
+     }
+    &__icon {
+        width:4.25rem;
+        height:4.25rem;
+        border:3px solid #fed136;
+        border-radius:100%;
+        position: relative;
+        margin:0 auto;
+    }
+    &__ic {
+        max-width:100%;
+        padding:0.875rem;
+        margin: auto auto;
+        position: absolute;
+        top: 0; left: 0; 
+        bottom: 0; right: 0;
+    }
+    &__title {
+        margin-top:1.3rem;
+        margin-bottom:1.12rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.12rem;
+        letter-spacing: -0.5px;
+        font-weight: bold;
+    }
+    &__parag {
+        font-family: 'RobotoSlab';
+        color:#777777;
+        text-align: center;
+        font-size:1rem;
+        letter-spacing: -0.4px;
+        margin-bottom:7.3rem;
+    }
+ }
+
+ .wrap-color {
+     background: #f7f7f7;
+     padding-top:.5rem;
+     padding-bottom:7rem;
+ }
+ .wrap-color:last-child {
+     background:#222222;
+ }
+ .portfolio {
+     display:flex;
+     flex-wrap:wrap;
+ }
+.cards {
+    width:30.5%;
+    margin-right:35px;
+    background: #fff;
+    margin-bottom:3.125rem;
+    &__img {
+        max-width:100%;
+        display: block;
+    }
+
+    &__bottom {
+        text-align:center;
+    }
+   &__title {
+       font-family: 'Montserrat', sans-serif;
+       font-size:1.125rem;
+       font-weight:bold;
+       letter-spacing: -0.5;
+       margin-top:1.8rem;       
+   }
+   &__subtitle {
+       font-family: 'DroidSerif';
+       font-size: 0.875rem;
+       font-style:italic;
+       font-weight: normal;
+       color: #737373;
+       margin-top:0.25rem;
+       margin-bottom:1.687rem;
+       
+   }
+}
+.cards:nth-child(3n){
+    margin-right:0;
+}
+
+.about {
+    display:grid;
+  grid-template-rows: 0.9fr .5fr 1fr;
+  grid-template-columns: 0.9fr .5fr 1fr;
+  grid-row-gap:90px;
+  grid-column-gap:45px;
+    &__grid {
+        align-self:center;
+        text-align: right;
+    }
+    &__grid:nth-child(2n) {
+        text-align: left;
+    }
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.125rem;
+        font-weight:bold;
+        letter-spacing: -0.5;
+        margin-bottom:0.8rem;     
+    }
+    &__parag {
+        font-family: 'RobotoSlab';
+        color:#777777;
+        font-size:1.1rem;
+        letter-spacing: -0.4px;
+        line-height: normal;
+    }
+    &__btn {
+        width:168px;
+        height:168px;
+        border-radius: 50%;
+        background:#fed136;
+        border:7px solid #f1f1f1;
+        display:table-cell;
+        margin-bottom:7.875rem;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#fff;
+        display:block;
+        text-align: center;
+        position:relative;
+        top:50%;
+        transform:translateY(-50%);
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.125rem;
+        font-weight:bold;
+        letter-spacing: -0.5;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+        line-height: 1.4;
+    }
+    &__pic {
+        width:168px;
+        height:168px;
+        border-radius:50%;
+        border:7px solid #f1f1f1;
+    }
+}
+
+.command {
+    display:flex;
+    justify-content: space-between;
+    &__foto {
+        width:221px;
+        height:221px;
+        border: solid 7px #ffffff;
+        border-radius:50%; 
+    }
+    &__img {
+        width:100%;
+        border-radius:50%;
+    }
+    &__person {
+        text-align:center;
+        margin-top:1.625rem;
+    }
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-size:1rem;
+        font-weight:bold;
+        line-height: 3.13;
+        letter-spacing: -0.4px;
+    }
+    &__subtitle {
+        font-family: RobotoSlab;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: -0.4px;
+        color: #777777;
+        margin-top:-0.312rem;
+        margin-bottom:0.75rem;
+    }
+    &__center {
+        width:56%;
+        margin: 0 auto;
+
+    }
+    &__parag {
+        font-family: RobotoSlab;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #777777;
+        
+    }
+}
+.social {
+    display:flex;
+    justify-content: center;
+    &__link {
+        margin-right:0.56rem;
+        margin-bottom:3.125rem;
+    }
+    &__link:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.fiveBlock {
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    &__item {
+        margin-right:2.5rem;
+        margin-bottom:4rem;
+        margin-top:4rem;
+        object-fit:contain;
+        width:20%;
+    }
+    &__item:last-child {
+        margin-right:0;
+    }
+}
+
+
+.form {
+    display:flex;
+    justify-content: space-around;
+    &__left {
+        display:flex;
+        flex-direction: column;
+        width:45%;
+    }
+    &__right {
+        width:45%;
+    }
+    &__item, &__message {
+        margin-bottom:1.875rem;
+        padding:1.25rem;
+        border-radius:5px;
+        border: solid 1px #cccccc;
+    }
+    ::-webkit-input-placeholder {
+        font-family: Montserrat;
+        font-size: 0.875rem;
+        font-weight: bold;
+        letter-spacing: -0.4px;
+        color: #bbbbbb;
+        text-transform: uppercase;
+    }
+    &__message {
+        width:100%;
+        padding-bottom:1.8rem;
+    }
+    &__button {
+        margin-top:1.875rem;
+    }
+}
+
+
+.footer {
+    display:flex;
+    width:66.6%;
+    margin:0 auto;
+    align-items: center;
+    margin-top:18px;
+    margin-bottom:29px;
+    &__copy{
+        flex-grow:0;
+        font-family:'Montserrat', sans-serif;
+        font-size: 0.875rem;
+        color: #555555;
+    }
+    &__social{
+        display:flex;
+        justify-content: center;
+        flex-grow:0.4;
+    }
+    &__icon {
+        margin-right:9px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:1140px) {
+    html {
+        font-size:90%;
+    }
+    .header__bg {
+        height:80vh;
+    }
+    .portfolio {
+        justify-content: space-between;
+     }
+     .cards{
+         width:40%;
+        &__img {
+            width:100%;
+        }
+    }
+    .cards:nth-child(2n) {
+        margin-right:0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width:600px) {
+    
+     html {
+         font-size:60%;
+     }
+     .navigation {
+         &__burg {
+             display:block;
+         }
+         &__list {
+             display:none;
+         }
+     }
+     .portfolio {
+        justify-content:center;
+     }
+     .cards{
+         width:100%;
+         margin-right:0;
+        &__img {
+            width:100%;
+        }
+    }
+    .about {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .text {
+        text-align:center;
+    }
+ }
+
+ @media screen and (max-width:420px) {
+    // .header__bg {
+    //     height:100vh;
+    // }
+    // .header__overlay{
+    //     height:35vh;
+    // }
+    
+   
+    html {
+        font-size:50%;
+    }
+}
