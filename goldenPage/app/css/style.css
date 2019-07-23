@@ -66,8 +66,7 @@ html {
 .header__headline {
   position: absolute;
   color: #fff;
-  top: 17.25rem;
-  white-space: nowrap;
+  margin-top: -23.75rem;
   z-index: 1;
 }
 .header__subtitle {
@@ -90,7 +89,7 @@ html {
 .header__button {
   position: absolute;
   text-align: center;
-  top: 29.7rem;
+  margin-top: -11.3rem;
   width: 66.6%;
   z-index: 1;
 }
@@ -636,5 +635,10 @@ html {
 @media screen and (max-width: 420px) {
   html {
     font-size: 50%;
+  }
+  .header__bg {
+    background-image: url('../img/mobile.jpg');
+    -webkit-background-size: cover;
+            background-size: cover;
   }
 }
