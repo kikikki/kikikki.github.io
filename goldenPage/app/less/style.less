@@ -70,9 +70,8 @@ html {
     &__headline {
         position: absolute; 
         color:#fff;
-        margin-top:-23.75rem;
+        top:17.25rem;
         z-index:1;
-
     }
     &__subtitle {
         text-align:center;
@@ -94,7 +93,7 @@ html {
     &__button {
         position: absolute; 
         text-align:center;
-        margin-top:-11.3rem;
+        margin-top:-150px;
         width:66.6%;
         z-index:1;
     }
@@ -500,9 +499,16 @@ html {
     html {
         font-size:90%;
     }
-    .header__bg {
-        height:80vh;
+    .header {
+        &__bg {
+            height:80vh;
+        }
+        &__headline {
+            margin-top:-100px;
+            margin-left:-40px;
+        }
     }
+    
     .portfolio {
         justify-content: space-between;
      }
@@ -518,11 +524,13 @@ html {
 
 }
 
-
  @media screen and (max-width:600px) {
     
      html {
-         font-size:60%;
+         font-size:70%;
+     }
+     .header__headline {
+         margin-left:-90px;
      }
      .navigation {
          &__burg {
@@ -554,7 +562,7 @@ html {
 
  @media screen and (max-width:420px) {   
     html {
-        font-size:50%;
+        font-size:60%;
     }
     .header {
         &__bg {
@@ -562,7 +570,8 @@ html {
         background-size:cover;
         }
         &__headline {
-            
+            margin-top:-50px;
+            margin-left:-40px;
         }
     }
 }
