@@ -70,8 +70,7 @@ html {
     &__headline {
         position: absolute; 
         color:#fff;
-        top:17.25rem; 
-        white-space:nowrap;
+        margin-top:-23.75rem;
         z-index:1;
 
     }
@@ -95,7 +94,7 @@ html {
     &__button {
         position: absolute; 
         text-align:center;
-        top:29.7rem; 
+        margin-top:-11.3rem;
         width:66.6%;
         z-index:1;
     }
@@ -520,31 +519,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  @media screen and (max-width:600px) {
     
      html {
@@ -578,16 +552,17 @@ html {
     }
  }
 
- @media screen and (max-width:420px) {
-    // .header__bg {
-    //     height:100vh;
-    // }
-    // .header__overlay{
-    //     height:35vh;
-    // }
-    
-   
+ @media screen and (max-width:420px) {   
     html {
         font-size:50%;
+    }
+    .header {
+        &__bg {
+        background-image:url('../img/mobile.jpg');
+        background-size:cover;
+        }
+        &__headline {
+            
+        }
     }
 }
