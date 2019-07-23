@@ -647,6 +647,7 @@ html {
     background-image: url('../img/mobile.jpg');
     -webkit-background-size: cover;
             background-size: cover;
+    height: 100vh;
   }
   .header__headline {
     margin-top: -50px;
@@ -680,6 +681,9 @@ html {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .command__center {
+    width: 100%;
   }
   .footer {
     -webkit-box-orient: vertical;
