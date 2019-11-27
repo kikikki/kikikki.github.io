@@ -23,7 +23,7 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 .header__bg {
-  background-image: url('app/img/header-img.jpg');
+  background-image: url('../img/header-img.jpg');
   max-width: 100%;
   height: 100vh;
   background-size: cover;
