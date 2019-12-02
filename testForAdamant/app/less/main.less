@@ -85,15 +85,15 @@ html {
 .columns {
     display:flex;
     justify-content: center;
-    padding:0 20px 0 55px;
+    padding:0 20px 0 50px;
     margin:0 auto;
     
     &__left{
-        width:360px;
+        max-width:360px;
         margin-right: 100px;
     }
     &__right{
-        width:330px;
+        max-width:330px;
         background:#fff;
         border-radius: 5px;
     }
@@ -118,7 +118,7 @@ html {
         font-size: 24px;
         font-weight: bold;
         position: absolute;
-        top:0; left:-35px;
+        top:0; left:-30px;
     }
     &__plus{
         color:#222;
@@ -131,7 +131,10 @@ html {
 }
 
 .discount{
-    padding:30px 35px;
+    padding:30px 15px 30px 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     &__parag{
         font-size: 20px;
         text-align:center;
@@ -179,16 +182,23 @@ html {
             margin-left: 0;
             width:320px;
         }
+        &__suptitle{
+            margin-bottom:20px;
+        }
     }
-    .columns{
-        flex-direction: column;
-        align-items: center;
+   .columns {
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       margin:0;
+       padding:0;
         &__left{
-            margin:0;
-            width:300px; 
+            width:300px;
+            margin-left: 130px;
+            margin-bottom:20px;
         }
         &__right{
-            width:300px;
+            margin-bottom:30px;
         }
     }
 }
