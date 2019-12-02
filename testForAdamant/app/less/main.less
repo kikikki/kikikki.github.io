@@ -65,6 +65,7 @@ html {
     border-radius: 5px;
     word-wrap: wrap none;
     cursor: pointer;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.2);
     &__btn {
         text-decoration:none;
         color:#fff;
@@ -74,11 +75,9 @@ html {
     
 }
 .button--call{
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to bottom, #ffd21f, #e4751c);
 }
 .button--discount {
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to bottom, #a2d417, #4c9918);
 }
 
@@ -86,13 +85,11 @@ html {
 .columns {
     display:flex;
     justify-content: center;
-    padding:0 20px;
-    text-align: center;
-    max-width:820px;
+    padding:0 20px 0 55px;
     margin:0 auto;
     
     &__left{
-        width:390px;
+        width:360px;
         margin-right: 100px;
     }
     &__right{
@@ -101,32 +98,37 @@ html {
         border-radius: 5px;
     }
     &__item {
-        display:flex;
-        align-items: center;
-        padding:5px;
+        padding:16px 28px 11px 50px;
+        text-align: start;
+        min-height:70px;
         background:#ffd21f;
         margin-bottom:15px;
-        border-radius: 100px/2px 10px 10px 100px/2px; 
+        border-radius: 5px;
+        position: relative;
     }
     &__circle {
-        min-width:70px;
+        width:70px;
         height:70px;
+        text-align:center;
         border-radius: 50%;
         background:#fff;
         color:#ffd21f;
-        line-height: 70px;
+        line-height: 60px;
+        border:5px solid #ffd21f;
         font-size: 24px;
         font-weight: bold;
+        position: absolute;
+        top:0; left:-35px;
     }
     &__plus{
-        margin-left:15px;
-        text-align: start;
         color:#222;
         font-size: 16px;
     }
+
 }
-
-
+.columns__item:first-child {
+    line-height: 40px;
+}
 
 .discount{
     padding:30px 35px;
@@ -143,7 +145,6 @@ html {
         border-radius: 5px;
         background-color: #f7f7f7;
         margin-bottom:15px; 
-        background: url(../img/phone.svg) no-repeat 220px center;
     }
 }
 
@@ -162,6 +163,7 @@ html {
     }
     .header{
         background:url('../img/header-img.jpg') no-repeat center top / cover;
+        height:200vh;
         &__top{
             flex-direction: column;
             align-items: center;
@@ -183,7 +185,10 @@ html {
         align-items: center;
         &__left{
             margin:0;
+            width:300px; 
+        }
+        &__right{
+            width:300px;
         }
     }
- 
 }
