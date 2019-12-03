@@ -80,7 +80,12 @@ html {
 .button--discount {
     background-image: linear-gradient(to bottom, #a2d417, #4c9918);
 }
-
+.button--discount:hover {
+    filter:hue-rotate(45deg);
+}
+.button--call:hover {
+    filter:hue-rotate(330deg);
+}
 
 .columns {
     display:flex;
@@ -194,8 +199,7 @@ html {
        padding:0;
         &__left{
             width:300px;
-            margin-left: 130px;
-            margin-bottom:20px;
+            margin:0 0 20px 30px;
         }
         &__right{
             margin-bottom:30px;

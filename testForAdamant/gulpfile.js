@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync'); 
+var browserSync = require('browser-sync');
+var cssnano = require('gulp-cssnano');
+var rename = require('gulp-rename'); 
 
 
 
@@ -14,6 +16,7 @@ gulp.task('less', function() {
         .pipe(browserSync.reload({stream: true}));
         
 });
+
 gulp.task('browser-sync', function() { 
     browserSync({ 
         server: { 
@@ -23,7 +26,15 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('css-min',function(){
+    return gulp.src('app/css/*.css')
+        .pipe(cssnano())
+        .pipe(rename({suffix:'.min'}))
+        .pipe(gulp.dest('app/css'));
+
+});
+
 gulp.task('watch', function() {
     gulp.watch('app/less/*.less', gulp.parallel('less'));
 });
-gulp.task('default', gulp.parallel('less', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('css-min', 'less', 'browser-sync', 'watch'));
