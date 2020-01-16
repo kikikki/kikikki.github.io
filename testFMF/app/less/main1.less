@@ -1,0 +1,156 @@
+* {
+    padding:0;
+    margin:0;
+}
+body{
+    display:flex;
+    height:100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+}
+
+
+// form1
+.wrap1{
+    width:500px;
+    height:600px;
+    border:2px solid #333;
+    margin:auto;
+}
+.form{
+    &__title{
+        font-size:24px;
+        text-align: center;
+        padding:15px 10px;
+    }
+    &__subtitle{
+        font-size:18px;
+        font-weight: bold;
+        letter-spacing: .7px;
+        padding:10px;
+        margin-bottom:20px;  
+    }
+    &__entry-field{
+        width:450px;
+        padding:5px;
+        background:#DCDCDC;
+        margin:10px;
+    }
+    &__title-result{
+        text-align:right;
+        font-size: 12px;
+        padding:10px;
+        margin-top:-40px;
+        line-height: 2;
+    }
+    &__result{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    &__btn{
+         display:block;
+         margin:0 auto;
+         padding:15px 25px;
+         width: 290px;
+         height:70px;
+         background: #0a335c;
+         border:none;  
+         color:#fff;
+         text-transform: uppercase;
+         font-size: 40px;
+         text-align: center;
+    }
+}
+
+
+// radio
+.radio{
+    position: relative;
+    display:inline;
+    &__input{
+    appearance: none;
+    }
+    &__label{
+    font-size:14px;
+    font-weight: normal;
+    padding-left:35px;
+    cursor: pointer;
+    margin-right: 150px;
+}
+}
+.radio__label:before{
+    content:"";
+    display:block;
+    width:20px;
+    height:20px;
+    background:#DCDCDC;
+    position: absolute;
+    top:2px;
+    left:10px;
+    z-index:1;
+}
+.radio__label:after{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    opacity:0;
+    background-image: url(../img/check-mark.svg);
+    position: absolute;
+    left:10px;
+    top:2px;
+    z-index:2;  
+}
+
+.radio__input:checked + .radio__label:after{
+    opacity:1;
+}
+
+hr{
+    width:480px;
+    margin:40px auto;
+    background:#DCDCDC;
+}
+
+// form2
+
+.wrap2{
+    width:500px;
+    height:600px;
+    border:2px solid #333;
+    margin:auto;
+    display:flex;
+    align-items: center;
+}
+.form__btn--margin{
+    margin-top:40px;
+}
+
+// form3 
+
+.wrap3{
+    width:500px;
+    height:600px;
+    border:2px solid #333;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__parag{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+// 
+.container1, .container2, .container3{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+.container2, .container3{
+    display:none;
+}
